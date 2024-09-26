@@ -1,0 +1,114 @@
+<!DOCTYPE html> 
+<html lang="es"> 
+    <head>     
+        <meta charset="UTF-8">     
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">     
+        <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">     
+        <title>Base de Dato 4</title> 
+        <link rel="icon" href="imagines/base de datos icono.jpeg" type="image/png">
+    </head> 
+    <body class="bg-gray-100"> 
+            
+        <header class="bg-blue-600 text-white p-4 text-center">         
+            <h1 class="text-3xl">BASE DE DATO</h1>         
+            <img src="imagines/encabezado.jpg" alt="encabezado de sql" class="mx-auto mt-2 w-1/2"> 
+            <br>
+            <nav class="flex justify-between p-2 bg-blue-600 shadow-md">         
+                <a href="Pagina3.html" class="text-xl font-bold text-white uppercase">Pagina Anterior</a>         
+                <a href="Pagina5.html" class="text-xl font-bold text-white uppercase">Siguiente Página</a>     
+            </nav> 
+
+        </header>      
+        <div class="bg-blue-600 md:bg-blue-600 lg:bg-blue-600">
+        <main class="p-4">         
+            <h2 class=" text-3xl font-bold text-white uppercase">TABLA UNA ENTIDAD - RELACION</h2>   
+            <br>   
+            <img src="imagines/entidad-relacion-ejemplo.jpg" alt="TABLA" class="mx-auto mt-2 w-1/2"> 
+
+            <p class="mx-auto mt-1 w-1/2 text-xl font-semibold-2 text-white uppercase">Esquema simple de una relación entre dos entidades y sus cardinalidades.
+
+            </p>  
+            <br>
+            <p class="text-lg font-semibold-2 text-white uppercase">
+                <li>Una entidad es un objetivo del cual se recoge información de interés para la base de datos. Gráficamente se representan mediante un rectángulo. Pueden ser fuertes (no dependen de otras entidades para existir) o débiles (siempre dependen de otra entidad, no tienen sentido por ellas mismas).</li>
+                <br>
+                <li>Una relación describe una conexión entre entidades y especifica cómo se relacionan entre ellas. Suelen ser verbos y se representan mediante un rombo. Las relaciones pueden ser de diferentes grados: las de grado 1 solo relacionan una entidad consigo misma, las de grado 2 son relaciones que asocian dos entidades distintas, y las de grado n son aquellas que unen más de dos entidades. <br>
+                    Además de los grados, las relaciones pueden tener distintos tipos de correspondencia: de 1:1 (a cada ocurrencia de una entidad le corresponde como máximo una ocurrencia de otra entidad), de 1:N (a cada ocurrencia de la primera entidad le pueden corresponder varias de la segunda entidad), y N:M (a cada ocurrencia de una entidad le pueden corresponder varias de la otra entidad relacionada y viceversa).</li>
+                    <br>
+                    <li>Los atributos son cada una de las propiedades de una entidad o relación. Gráficamente se representan mediante un círculo. Dentro de una entidad, tiene que haber un atributo principal que la identifica y que su valor tiene que ser único. Un ejemplo de atributo principal sería el DNI de una persona, que la identifica de manera única. </li>
+                    <br>
+                    <li>Por último, la cardinalidad define el número máximo y mínimo de ocurrencias de cada tipo de entidad. Se representa con los valores máximo y mínimo entre paréntesis, o al principio y final de cada relación.</li>
+                    <br></p>
+
+
+            <br>
+            <h2 class="mx-auto mt-2 w-1/2 text-xl font-bold text-white uppercase">¿QUE ES EL MODELO ENTIDAD RELACION?</h2>
+            <br>
+            <p class="text-lg font-semibold-2 text-white uppercase"> El modelo entidad relación o ERD, corresponde a la segunda fase de la creación de una base de datos. Es un diagrama de flujo que representa de manera simplificada cómo las personas, objetos y conceptos se relacionan entre sí.
+                    
+                
+            </p>    
+                
+                <br>
+                <br>
+
+                <h1 class="mx-auto mt-2 w-1/2 text-xl font-bold text-white">¿QUE ES UN CAMPO?</h1>
+                <br><br>
+                <P class="text-lg font-semibold-2 text-white uppercase">
+                    Los campos son los componentes que proporcionan la estructura a una tabla. No es posible tener una tabla sin campos. Por ejemplo, puede crear una tabla vacía que tenga definidos los campos pero ninguna fila (registros). <br><br>
+
+En las bases de datos, se utilizan campos para mantener las relaciones entre las tablas. Se realiza creando campos coincidentes en dos o más tablas. Por ejemplo, si almacenara una tabla llamada almacén_juguetes en una base de datos y también almacena una tabla de personal para realizar el rastreo de los empleados en cada almacén, crearía un campo común entre las dos tablas que se rellenaría, por ejemplo, con un Id. de almacén. El valor del identificador de almacén para un almacén de juguetes concreto sería el mismo en ambas tablas. <br><br>
+
+A continuación, se ha agregado un campo STORE_ID a la tabla almacén_juguetes: <br><br>
+                </P>
+                <img src="imagines/id 1.jpg" alt="id 1" class="mx-auto mt-2 w-1/2">
+
+                
+                <p class="mx-auto mt-1 w-1/2 text-xl font-semibold-2 text-white uppercase"> Se muestra la tabla almacén_juguetes con el campo STORE_ID.
+
+                    </P>
+                    <br>
+                    <p class="text-lg font-semibold-2 text-white uppercase">La tabla almacén_juguetes se vincula a una tabla de empleados mediante el Id. de almacén. La tabla siguiente muestra a tres empleados de The Play House:</p>
+                    <img src="imagines/id 2.jpg" alt="id 2" class="mx-auto mt-2 w-1/2">
+                    <p class="mx-auto mt-1 w-1/2 text-xl font-semibold-2 text-white uppercase"> La tabla de empleados está vinculada a la tabla almacén_juguetes mediante el campo STORE_ID .
+
+                    </P>
+                    
+<br><br>
+                    <h2 class="mx-auto mt-2 w-1/2 text-xl font-bold text-white uppercase">¿QUE ES ATRIBUTOS?</h2>
+                    <br><br>
+                    <img src="imagines/ATRIBUTOS.png" alt="ATRIBUTO" class="mx-auto mt-2 w-1/2">
+                    <p class="mx-auto mt-1 w-1/2 text-xl font-semibold-2 text-white uppercase">Las propiedades particulares de los tipos de entidad se denominan atributos. Los atributos contienen valores que describen cada instancia de la entidad y representan la parte principal de los datos almacenados en la base de datos.
+
+                    </P>
+                    <br><br>
+
+                    <P class="text-lg font-semibold-2 text-white uppercase">
+                    Los atributos son características o rasgos que describen una persona, una organización, un lugar o un elemento. Los atributos comunes incluyen información como nombres, direcciones, números de teléfono, números de tarjeta de crédito, números de identificación fiscal y números de licencia.
+                    <br>
+
+                    <br>
+                    El sistema es compatible con las clases siguientes de atributos:
+                    <br><br>
+                    <li>NOMBRE</li>
+                    <li>DIRRECCIONES</li>
+                    <li>NUMEROS</li>
+                    <li>CARACTERISTICAS</li>
+                    <li>CORREO ELECTRONICOS</li>
+                    </p>
+
+
+
+
+                    
+                </div>
+
+                
+
+                
+            </main>      
+            <button onclick="window.scrollTo({top: 0, behavior: 'smooth'});" class="fixed bottom-6 right-6 bg-blue-800 text-white p-6 rounded-full shadow-lg">         ↑     
+
+            </button> 
+        </body> 
+        </html>

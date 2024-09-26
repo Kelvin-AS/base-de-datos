@@ -1,0 +1,158 @@
+<!DOCTYPE html> 
+<html lang="es"> 
+    <head>     
+        <meta charset="UTF-8">     
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">     
+        <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">     
+        <title>Base de Dato 5</title> 
+        <link rel="icon" href="imagines/base de datos icono.jpeg" type="image/png">
+    </head> 
+    <body class="bg-gray-100"> 
+            
+        <header class="bg-blue-600 text-white p-4 text-center">         
+            <h1 class="text-3xl">BASE DE DATO</h1>         
+            <img src="imagines/encabezado.jpg" alt="encabezado de sql" class="mx-auto mt-2 w-1/2"> 
+            <br>
+            <nav class="flex justify-between p-2 bg-blue-600 shadow-md">         
+                <a href="Pagina4.html" class="text-xl font-bold text-white uppercase">Pagina Anterior</a>         
+                <a href="index.html" class="text-xl font-bold text-white uppercase">Volver al Inicio</a>     
+            </nav> 
+
+        </header>      
+        <div class="bg-blue-600 md:bg-blue-600 lg:bg-blue-600">
+        <main class="p-4">         
+            <h2 class=" text-3xl font-bold text-white uppercase">TIPOS DE ATRIBUTOS</h2>   
+            <br>   
+            <img src="imagines/TIPOS DE ATRIBUTOS.gif" alt="TIPOS DE ATRIBUTOS" class="mx-auto mt-2 w-1/2"> 
+
+            <p class="mx-auto mt-1 w-1/2 text-xl font-semibold-2 text-white uppercase">La división de los atributos podemos realizarla atendiendo a diferentes factores:
+
+            </p>  
+            <br>
+            <p class="text-lg font-semibold-2 text-white uppercase">
+                <li>Composición: simples y compuestos</li>
+                <br>
+                <li>Valores: monovaluados y multivaluados</li>
+                    <br>
+                    <li>Origen: almacenados y derivados </li>
+                    <br>
+            </p>
+
+                    
+                        <h3 class=" text-1xl font-bold text-white uppercase">Atendiendo a la composición.</h3> <br>
+
+                        <P class="text-lg font-semibold-2 text-white uppercase">
+                        Los atributos pueden ser de dos tipos atendiendo a su composición: <br><br>
+                        </p>
+
+                        <h3 class=" text-1xl font-bold text-white uppercase">Simples.</h3><br>
+                        <P class="text-lg font-semibold-2 text-white uppercase">Los atributos simples son aquellos que tienen un solo componente y que no se pueden dividir en partes más pequeñas con significado propio. Se representan mediante círculos. <br></P>
+                        
+                    
+                        <li>Ejemplos: nombre, dni, email, dirección, sueldo</li><br><br>
+
+                        <h3 class=" text-1xl font-bold text-white uppercase">Compuestos</h3><br>
+                        <p class="text-lg font-semibold-2 text-white uppercase">Por contra, los atributos compuestos son aquellos que están formados por varios componentes y que tienen afinidad en cuanto a su significado. Se representan, también, con círculos unidos a cada uno de los atributos de los que se compone.</p><br>
+                        <li>Ejemplos: nombre (nombre-pila, apellido2, apellido2), direccion (calle, numero, puerta)</li><br>
+
+                        <h3 class=" text-1xl font-bold text-white uppercase">Atendiendo a los valores</h3><br>
+                        <p class="text-lg font-semibold-2 text-white uppercase">Otra forma de clasificarlos es atendiendo al número de valores que puede tener cada atributo:</p><br><br>
+
+                        <h3 class=" text-1xl font-bold text-white uppercase">Monovaluados</h3><br>
+                        <p class="text-lg font-semibold-2 text-white uppercase">Un atributo monovaluado es aquel que tiene un solo valor por cada ocurrencia de la entidad a la que pertenece. Se representan mediante un círculo.</p><br>
+                        <li>Ejemplos: nombre, edad, dni, apellidos</li><br>
+
+                        <h3 class=" text-1xl font-bold text-white uppercase">Multivaluados</h3><br>
+                        <p class="text-lg font-semibold-2 text-white uppercase">Por otra parte, un atributo multivaluado puede tener varios valores por cada ocurrencia de la entidad. Se representan de manera similar, pero en lugar de un círculo son dos, uno dentro de otro.</p><br>
+                        <li>Ejemplos: teléfono, dirección, coche</li><br>
+
+                        <h3 class=" text-1xl font-bold text-white uppercase">Atendiendo al origen</h3><br>
+                        <p class="text-lg font-semibold-2 text-white uppercase">La última de las tipologías que vamos a explicar es aquella que se basa en el origen de los datos. En este tipo, al igual que en los casos anteriores, tenemos dos: almacenados y derivados.</p><br>
+
+                        <h3 class=" text-1xl font-bold text-white uppercase">Almacenados</h3><br>
+                        <p class="text-lg font-semibold-2 text-white uppercase">Son aquellos cuyos datos se almacenan directamente en la base de datos sin necesidad de realizar ningún trámite intermedio. Se representan mediante círculos.</p><br>
+                        <li>Ejemplos: nombre, dni, apellidos</li><br>
+
+                        <h3 class=" text-1xl font-bold text-white uppercase">Derivados</h3><br>
+                        <p class="text-lg font-semibold-2 text-white uppercase">Por contra, los atributos derivados son aquellos que son obtenidos a partir del valor de uno o varios atributos existentes en la misma o en otras entidades. Se representan mediante círculos discontinuos.</p><br>
+                        <li>Ejemplos: edad (a partir de la fecha de nacimiento)</li><br>
+
+                    
+
+
+            <br>
+            <h2 class="mx-auto mt-2 w-1/2 text-xl font-bold text-white uppercase">¿QUE ES UN MODELO ENTIDAD RELACION?</h2>
+            <br>
+            <p class="text-lg font-semibold-2 text-white uppercase"> Un diagrama entidad-relación, también conocido como modelo entidad relación o ERD, es un tipo de diagrama de flujo que ilustra cómo las "entidades", como personas, objetos o conceptos, se relacionan entre sí dentro de un sistema. Los diagramas ER se usan a menudo para diseñar o depurar bases de datos relacionales en los campos de ingeniería de software, sistemas de información empresarial, educación e investigación. También conocidos como los ERD o modelos ER, emplean un conjunto definido de símbolos, tales como rectángulos, diamantes, óvalos y líneas de conexión para representar la interconexión de entidades, relaciones y sus atributos. Son un reflejo de la estructura gramatical y emplean entidades como sustantivos y relaciones como verbos.
+                    
+                
+            </p>    
+                
+                <br>
+                <br>
+
+                <h1 class="mx-auto mt-2 w-1/2 text-xl font-bold text-white">CARDENALIDAD EN MODELO ENTIDAD Y RELACION</h1>
+                <br><br>
+                <P class="text-lg font-semibold-2 text-white uppercase">
+                    Existen principalmente tres tipos de cardinalidad:
+
+1. **Uno a Uno (1:1)**: Una instancia de la entidad A se relaciona con una sola instancia de la entidad B y viceversa. Por ejemplo, cada persona tiene un número de identificación único.
+<br>
+2. **Uno a Muchos (1:N)**: Una instancia de la entidad A puede relacionarse con muchas instancias de la entidad B, pero cada instancia de B solo puede relacionarse con una instancia de A. Por ejemplo, un autor puede haber escrito varios libros, pero cada libro tiene un solo autor.
+<br>
+3. **Muchos a Muchos (M:N)**: Muchas instancias de la entidad A pueden relacionarse con muchas instancias de la entidad B. Por ejemplo, los estudiantes pueden estar inscritos en varios cursos y cada curso puede tener varios estudiantes. <br><br>
+  </P>
+                    
+<br><br>
+                    <h2 class="mx-auto mt-2 w-1/2 text-xl font-bold text-white uppercase">CARDENALIDAD 1 a 1, 1 a MUCHO, MUCHO a MUCHO</h2>
+                    <br>
+                    <p class="text-lg font-semibold-2 text-white uppercase">1. Cardinalidad Uno a Uno (1:1) <br>
+                        - **Definición**: Una instancia de la entidad A se relaciona con una sola instancia de la entidad B, y viceversa. <br>
+                        - **Ejemplo**: <br>
+                          - **Entidades**: Persona y Pasaporte. <br>
+                          - **Relación**: Cada persona tiene un único pasaporte, y cada pasaporte pertenece a una única persona. <br>
+                        
+                        2. Cardinalidad Uno a Muchos (1:N) <br>
+                        - **Definición**: Una instancia de la entidad A puede estar relacionada con muchas instancias de la entidad B, pero cada instancia de B solo puede estar relacionada con una instancia de A. <br>
+                        - **Ejemplo**: <br>
+                          - **Entidades**: Autor y Libro. <br>
+                          - **Relación**: Un autor puede escribir varios libros, pero cada libro solo tiene un autor. <br>
+                        
+                        3. Cardinalidad Muchos a Muchos (M:N) <br>
+                        - **Definición**: Muchas instancias de la entidad A pueden estar relacionadas con muchas instancias de la entidad B. <br>
+                        - **Ejemplo**: <br>
+                          - **Entidades**: Estudiante y Curso. <br>
+                          - **Relación**: Un estudiante puede inscribirse en varios cursos, y un curso puede tener varios estudiantes inscritos. <br>
+                        </p>
+                        
+                        <h3 class=" text-1xl font-bold text-white uppercase">Resumen Visual</h3> <br>
+                        <p class="text-lg font-semibold-2 text-white uppercase">
+                        Para ayudarte a visualizarlo: <br>
+                        
+                        - **1:1**  <br>
+                          Persona ↔️ Pasaporte <br>
+                        
+                        - **1:N** <br>
+                          Autor ↔️ Libros (un autor → muchos libros) <br>
+                        
+                        - **M:N** <br>
+                          Estudiantes ↔️ Cursos (muchos estudiantes ↔️ muchos cursos)
+
+                    </P>
+                    
+                    
+                </div>
+
+                <div class="fixed bottom-5 right-5">
+                    <a href="https://wa.me/+584124657222" target="_blank" class="bg-green-500 text-white rounded-full p-4 shadow-lg hover:bg-green-600 transition duration-300">
+                        📞 Soporte
+                    </a>
+                </div>
+
+                
+            </main>      
+            <button onclick="window.scrollTo({top: 0, behavior: 'smooth'});" class="fixed bottom-12 right-6 bg-blue-800 text-white p-6 rounded-full shadow-lg">         ↑     
+
+            </button> 
+        </body> 
+        </html>
